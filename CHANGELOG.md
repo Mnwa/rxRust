@@ -74,7 +74,7 @@
 
 ### Breaking Changes
 - **observable**: macros `of!`, `empty!`, `from_iter!`, `from_future!` and
-  `from_future_with_errors!` replaced by functions.
+  `from_future_result!` replaced by functions.
 
 ## [0.4.0](https://github.com/rxRust/rxRust/releases/tag/v0.4.0)  (2019-11-07)
 
@@ -145,7 +145,7 @@ assert_eq!(res, 100);
 - **observable**: `observable::empty` function  to `observable::empty!` macro.
 - **observable**: `observable::of` function to `observable::of!` macro.
 - **observable**: `observable::from_future` function to `observable::from_future!` macro
-- **observable**: `observable::from_future_with_err` function to `observable::from_future_with_err!` macro
+- **observable**: `observable::from_future_result` function to `observable::from_future_result!` macro
 - **observable**: `observable::interval` function to `observable::interval!` macro
 
 ### Bug Fixes
@@ -158,7 +158,7 @@ assert_eq!(res, 100);
 ### Features
 - **observable**: add `observable::from_vec` and `observable::from_range`
 - **observable**: add `observable::empty` and `observable::of`
-- **observable**: add `observable::from_future` and `observable::from_future_with_err`
+- **observable**: add `observable::from_future` and `observable::from_future_result`
 - **observable**: add `observable::interval`
 - **operator**: add `delay` operator 
 - **operator**: add `filter` operator 
